@@ -50,6 +50,12 @@ student_id = "s251702"
 
 ## Yann
 
+s251889
+
+```{r}
+price <- 5
+```
+
 ## New Feature
 
 This is a new feature.
