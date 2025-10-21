@@ -49,3 +49,13 @@ student_id = "s251702"
 ## Mazarine
 
 ## Yann
+
+## New Feature
+
+This is a new feature.
+
+```{r}
+
+a = 3
+print(a)
+```
