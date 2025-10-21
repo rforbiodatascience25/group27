@@ -14,6 +14,14 @@ r_variable <- 5
 
 ## Erine
 
+```{r}
+e <- 8
+```
+
+```{r}
+1 + 2
+```
+
 ## Emily
 
 ## Mazarine
