@@ -10,6 +10,7 @@ author: "Emily Möller (s251702), Erine Genilloud (s252025), Mazarine Chambon (s
 ```{r}
 #| echo: false
 library("tidyverse")
+library(broom)
 ```
 
 ## Load data
@@ -17,4 +18,17 @@ library("tidyverse")
 ```{r}
 #| echo: false
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
+
+## Yann
+
+```{r}
+biopsy |>
+  select(where(is.numeric)) |>
+  prcomp(scale = TRUE) |>
+  augment(biopsy) |>
+  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) +
+  geom_point(size = 2) +
+  theme_minimal()
+
 ```
