@@ -12,6 +12,14 @@ Salut, j'écris un message
 r_variable <- 5
 ```
 
+### New feature
+
+```{r}
+h <- 4 + 6 
+```
+
+Hello
+
 ## Erine
 
 ```{r}
