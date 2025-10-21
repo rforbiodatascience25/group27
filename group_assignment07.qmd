@@ -32,6 +32,7 @@ biopsy |>
   theme_minimal()
 
 ```
+
 ## Hedi
 
 ```{r}
