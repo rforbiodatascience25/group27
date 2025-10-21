@@ -43,3 +43,19 @@ ggplot(biopsy, aes(x = outcome, y = clump_thickness, fill = outcome)) +
 
 Boxplot representing the difference of clump thickness between malignant and benign cells. \
 Malignant samples show thicker and more variable cell clumps, while benign ones stay lower and more consistent — a pattern typical of cancerous tissue.
+## Erine
+
+```{r}
+biopsy |> 
+  ggplot(aes(x = clump_thickness, y=uniform_cell_size)) +
+  geom_point(aes(color = outcome)) +
+  labs(
+    x = "Clump thickness",
+    y = "Uniform cell size",
+    title = "Clump thickness by cell size"
+  )
+```
+
+In this graph, we can see that there is a correlation between clump thickness and the state of the cell.
+
+For example, a cell of size 3 has a high probability of being malignant if the clump thickness is higher than 7.
