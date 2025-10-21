@@ -22,6 +22,14 @@ e <- 8
 1 + 2
 ```
 
+### New feature
+
+Bonjour bonjour
+
+```{r}
+bonjour <- bjr
+```
+
 ## Emily
 
 s251702
