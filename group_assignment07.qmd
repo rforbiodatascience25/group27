@@ -1,0 +1,20 @@
+---
+title: "Group Assignment 07"
+format: html
+editor: visual
+author: "Emily Möller (s251702), Erine Genilloud (s252025), Mazarine Chambon (s251918), Yann Ducrest (s251889), Hedi Khemakhem (s251900)"
+---
+
+## Load libraries
+
+```{r}
+#| echo: false
+library("tidyverse")
+```
+
+## Load data
+
+```{r}
+#| echo: false
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
