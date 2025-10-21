@@ -10,6 +10,12 @@ editor: visual
 
 ## Emily
 
+s251702
+
+```{r}
+student_id = "s251702"
+```
+
 ## Mazarine
 
 ## Yann
