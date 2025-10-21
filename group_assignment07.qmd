@@ -41,8 +41,9 @@ ggplot(biopsy, aes(x = outcome, y = clump_thickness, fill = outcome)) +
   )
 ```
 
-Boxplot representing the difference of clump thickness between malignant and benign cells. \
+Boxplot representing the difference of clump thickness between malignant and benign cells.\
 Malignant samples show thicker and more variable cell clumps, while benign ones stay lower and more consistent — a pattern typical of cancerous tissue.
+
 ## Erine
 
 ```{r}
