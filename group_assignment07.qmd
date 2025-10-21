@@ -19,6 +19,30 @@ library("tidyverse")
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
+## Hedi
+
+```{r}
+library(broom)  # devtools::install_github("tidymodels/broom")
+library(cowplot)
+```
+
+```{r}
+ggplot(biopsy, aes(x = outcome, y = clump_thickness, fill = outcome)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(
+    title = "Clump Thickness by Outcome",
+    x = "Outcome",
+    y = "Clump Thickness"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+```
+
+Boxplot representing the difference of clump thickness between malignant and benign cells. \
+Malignant samples show thicker and more variable cell clumps, while benign ones stay lower and more consistent — a pattern typical of cancerous tissue.
 ## Erine
 
 ```{r}
