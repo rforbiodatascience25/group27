@@ -20,6 +20,24 @@ library(broom)
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
+## Emily
+
+```{r}
+head(biopsy)
+```
+
+Clump Thickness vs Bare Nuclei by Outcome
+
+```{r}
+
+ggplot(biopsy, aes(x = clump_thickness, y = bare_nuclei, color = outcome)) +
+  geom_point(alpha = 0.7, size = 3) +
+  labs(
+    title = "Clump Thickness vs Bare Nuclei by Outcome",
+    x = "Clump Thickness",
+    y = "Bare Nuclei"
+  )
+```
 ## Yann
 
 ```{r}
