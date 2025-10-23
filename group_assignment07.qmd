@@ -38,6 +38,7 @@ ggplot(biopsy, aes(x = clump_thickness, y = bare_nuclei, color = outcome)) +
     y = "Bare Nuclei"
   )
 ```
+
 ## Yann
 
 ```{r}
@@ -92,3 +93,15 @@ biopsy |>
 In this graph, we can see that there is a correlation between clump thickness and the state of the cell.
 
 For example, a cell of size 3 has a high probability of being malignant if the clump thickness is higher than 7.
+
+## Mazarine
+
+```{r}
+ggplot(biopsy, aes(x = clump_thickness, y = epithelial_cell_size, color = outcome)) +
+  geom_point(alpha = 0.7, size = 3) +
+  labs(
+    title = "Clump Thickness vs Epithelial Cell Size by Outcome",
+    x = "Clump Thickness",
+    y = "Epithelial Celle Size"
+  )
+```
